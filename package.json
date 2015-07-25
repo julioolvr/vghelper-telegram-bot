@@ -1,0 +1,11 @@
+{
+  "name": "VGHelperBot",
+  "version": "0.0.0",
+  "description": "VideoGame Helper Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Olivera",
+  "license": "ISC"
+}
