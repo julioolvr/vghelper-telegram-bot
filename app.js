@@ -7,8 +7,8 @@ const client = new giantbombClient(process.env.GIANTBOMB_API_KEY);
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-    client.releasesFor(7, 2015).then(games => {
+app.post('/update', (req, res) => {
+    client.releasesFor(req.body.month, req.body.year).then(games => {
         res.send(games);
     });
 });
